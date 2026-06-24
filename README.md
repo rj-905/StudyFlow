@@ -82,4 +82,26 @@ python -m studyflow.py
 
 Follow the terminal prompts to input a new study topic or initiate an SM-2 scheduled review session\!
 
+# StudyFlow CLI Operations
+
+Here are all the operations you can perform in StudyFlow along with their exact terminal syntax:
+
+### 1. Learn a New Topic
+Triggers the multi-agent orchestration (Lecture, Reading, Notes, and Quiz agents) to generate a personalized study guide and initial assessment for a specific topic.
+**Syntax:**
+`python -m studyflow.cli learn "<Topic Name>"`
+*Example: `python -m studyflow.cli learn "Quantum Computing"`*
+
+### 2. Spaced-Repetition Review
+Checks the database for any topics due for review based on the SM-2 algorithm and launches an interactive, terminal-based multiple-choice quiz session.
+**Syntax:**
+`python -m studyflow.cli review`
+
+### 3. Generate Weekly Digest
+Analyzes your current active topics and recent quiz performances to generate an encouraging, beautifully formatted progress report (saved to your Downloads folder).
+**Syntax:**
+`python -m studyflow.cli digest`
+
 *Built for the AI Agents Capstone Project.*
+
+
